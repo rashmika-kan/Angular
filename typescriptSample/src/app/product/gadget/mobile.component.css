@@ -1,0 +1,15 @@
+.card-img-top{
+    height:5 cm;
+    width:5cm;
+}
+.card-img-top:hover{
+    height:8 cm;
+    width:8cm;
+}
+.card{
+    padding-top: 30 px;
+    
+}
+.availability{
+    color: rgb(142, 207, 76);
+}

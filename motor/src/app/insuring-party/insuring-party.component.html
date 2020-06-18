@@ -1,0 +1,36 @@
+<div class="container">
+    <h1>Insuring Party</h1>
+    <form [formGroup]="insureForm"  (ngSubmit)="onSubmit()">
+      <div class="form-group row">
+        <p class="col-lg-8"><label for="data"  placeholder="EGN/EIK/LNCH">Enter your EGN/EIK/LNCH <br>
+            <a href="https://www.google.com/" target="_blank"><u>Who's data should I fill?</u></a></label></p>
+        <div class="col-lg-4">
+         <input type="text" name="data" id="data" formControlName="data" class="form-control">
+         <div *ngIf="insureForm.controls.data.hasError('required') &&(insureForm.controls.data.dirty || insureForm.controls.data.touched)" class="errorMessage">Please enter the data</div>
+        </div>
+      </div>
+      <hr>
+      <div class="form-group row">
+        <label for="residence"  class="col-lg-8">Place of Residence</label>
+        <div class="col-lg-4">
+          <select name="residence" id="residence" class="form-control" formControlName="residence">
+            <option *ngFor="let place of places" [value]="place">{{place}}</option>
+          </select>
+          <div *ngIf="insureForm.controls.residence.hasError('required') &&(insureForm.controls.residence.dirty || insureForm.controls.residence.touched)" class="errorMessage">Please enter your residence</div>
+        </div>
+      </div>
+      <hr>
+      <div class="form-group row">
+        <label for="emailid" class="col-lg-8">Email</label>
+        <div class="col-lg-4">
+          <input type="email" name="emailid" id="emailid" formControlName="emailid" class="form-control">
+          <div *ngIf="insureForm.controls.emailid.hasError('required') &&(insureForm.controls.emailid.dirty || insureForm.controls.emailid.touched)" class="errorMessage">Please enter your emailid</div>
+        </div>
+      </div>
+      <hr>
+      <div>
+        <button type="submit" class="btn btn-primary " [disabled]="!insureForm.valid">Next</button>
+      </div>
+  
+    </form>
+  </div>

@@ -1,0 +1,90 @@
+/* .main-container {
+	font-family: Verdana;
+	text-align: justify;
+    background-color:white;
+    animation-name: awe;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+		
+header {
+	background-color:black;
+	color:white;
+	padding: 5px;
+}
+header .label {
+	font-family:Berlin Sans FB;
+	font-size:28px;
+	color:white;
+    text-align:left;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+            
+}
+.content-area {
+}
+.content-area .main {
+	padding: 20px;
+}
+.content-area .main .article {
+	padding: 10px;
+}
+		
+.content-area .main .food {
+
+}
+.content-area .main .food .food-card {
+	border: 1px solid black;
+	margin: 30px;
+	padding: 10px;
+	background:white;
+}
+		
+.content-area .main .food .veg-food-card:hover {
+    color: rgb(18,70,128);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),0 10px 10px rgba(0, 0, 0, 0.22);
+    transition-property: color,box-shadow;
+    transition-duration: 0.5;
+    transition-timing-function: ease-in;
+    transition-delay: 0ms;
+
+	
+}
+@keyframes anime{
+    from{transform: scale(0,0);}
+    to{transform: scale(1.2,1.2);}
+
+}
+@keyframes awe{
+    0% { transform: translate(100px); }
+    25% { transform: translate(-100px); }
+    50%  { transform: translate(-100px); }
+    100% { transform: translate(100px); }
+}
+.content-area .main .food .non-veg-food-card {
+    
+} */
+.container-fluid{
+    background-image:url(C:\Users\RASHMIKA\Desktop\Angular\hello\src\assets\background1.jpg);
+    margin: 50px;
+    
+}
+.jumbotron{
+    color: black;
+    width: fit-content;
+    height: fit-content;
+}
+.card{
+    width:fit-content;
+    margin-left:900px;
+    margin-bottom: 300px;
+}
+.table{
+    color: white;
+    width: 400px;
+}

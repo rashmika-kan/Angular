@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>InfyStore</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <a href="product.component.html" class="navbar-brand">InfyStore</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+    </nav>
+    <div class="row">
+        <div class="col-sm-12">  </div>
+                <div class="container col-sm-12" style="padding-top:50px">
+          <div class="panel panel-primary">
+            <div class="panel-heading text-center" ><h3>InfyStore Shopping Portal(ISP)</h3></div>
+            <div class="panel-body">
+        
+                        <div>
+                            <p class="text-center " style="padding-top: 50px">
+                            <button class="btn btn-primary" name="ShopButton" (click)="show=true">Are you ready to shop?</button>
+                            </p>
+                        </div>
+                        <div *ngIf="show">
+                           <app-mobile></app-mobile>
+                        </div>
+                        
+                    </div>
+                    </div>
+                        <div class="col-lg-3 col-md-3 col-sm-2 col-xs-1"></div>		
+                        
+                        
+                 </div>
+                </div>
+         
+    
+</body>
+</html>
